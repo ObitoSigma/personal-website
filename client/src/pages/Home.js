@@ -4,6 +4,13 @@ import '../utilities.css'
 import './Home.css'
 
 const Home = () => {
+  const [modalOn, setModalOn] = useState(false)
+  const onChange = () => {
+    console.log('Opening the modal now')
+    setModalOn(true)
+  }
+
+  
   return (
     <>
       <div className='u-flex u-flex-alignStretch'>
